@@ -46,9 +46,17 @@
 
     </div>
 </div>
-<div class="button" align="center">
-<button class="button button1" onclick="window.open('', '_self', ''); window.close();"> CLOSE GAME!</button>
-  </div>
+<input type="button" class="btn btn-success"
+                      style="font-weight: bold;display: inline;"
+                      value="Close"
+                      onclick="closeMe()">
+<script>
+function closeMe()
+{
+   window.opener = self;
+   window.close();
+}
+</script>
 <script type="text/javascript" src="main.js"></script>
 
 
