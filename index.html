@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Rock,Papaer,Scissor Game</title>
+</head>
+<body>
+    <header>
+        <h1>Rock,Paper,Scissor</h1>
+        <h1 class="ml7">
+        <span class="text-wrapper">
+        <span class="letters">Make a Move!</span>
+        </span>
+        </h1>
+    </header>
+
+    <div class="container">
+  	    <div class="score-container">
+  		    <span class="user">USER</span>
+  		    <span id="score"></span>
+  		    <span class="com">COM</span>
+  	    </div>
+
+    <div class="buttons">
+
+      <button id="rock" class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+      <button id="paper" class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+      <button id="scissors" class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+   </div>
+   <div id="challenge">
+    <div id="you">
+        <div id="Userob"></div>
+        <div class="who">User</div>
+    </div>
+    <div id="result"><p id="who"><p></div>
+    <div id="com">
+        <div id="Comobt"></div>
+        <div class="who">Computer</div>
+
+    </div>
+</div>
+<div class="button" align="center">
+<button class="button button1" onclick="window.open('', '_self', ''); window.close();"> CLOSE GAME!</button>
+  </div>
+<script type="text/javascript" src="main.js"></script>
+
+
+
+</body>
+</html>
